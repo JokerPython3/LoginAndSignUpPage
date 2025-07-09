@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0f2f5 0%, #d9e2ec 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 380px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  padding: 32px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2563eb;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #9ca3af;
+  font-size: 1rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px 14px 40px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #f9fafb;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  font-size: 0.95rem;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+  background: #fff;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 36px;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 0.75rem;
+  color: #2563eb;
+}
+
+.buttons-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-link {
+  font-size: 0.85rem;
+  color: #6b7280;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.btn-link:hover {
+  background: rgba(107,114,128,0.1);
+}
+
+.btn-submit {
+  padding: 10px 22px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2563eb 0%, #1e40af 100%);
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 6px 16px rgba(37,99,235,0.4);
+  transform: translateY(-1px);
+}
+
+.footer-text {
+  margin-top: 24px;
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+.suc, .use{
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  margin-top: 8px;
+
+}
